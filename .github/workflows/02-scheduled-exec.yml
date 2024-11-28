@@ -1,13 +1,12 @@
-name: 'Execução agendada'
+name: "Execução agendada"
 
 on:
   schedule:
-    - cron: '30 7 * * 3'
+    - cron: "30 7 * * 3"
 
 jobs:
   e2e-tests:
-
-    runs-on: ['ubuntu-latest']
+    runs-on: ["ubuntu-latest"]
 
     steps:
       - uses: actions/checkout@v4
